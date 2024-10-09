@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
@@ -21,8 +22,7 @@
             android:textSize="24sp"
             android:textColor="#1E293B"
             android:letterSpacing="0.04"
-            android:fontFamily="sans-serif-black"
-            />
+            android:fontFamily="sans-serif-black" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -36,8 +36,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/datepicker"
                 android:calendarViewShown="false"
-                android:datePickerMode="calendar"/>
-
+                android:datePickerMode="calendar" />
         </LinearLayout>
 
         <LinearLayout
@@ -50,14 +49,11 @@
             android:layout_marginTop="20dp">
 
             <TimePicker
-                android:id="@+id/time_picker"
+                android:id="@+id/timePicker"
                 android:layout_width="wrap_content"
                 android:layout_height="153dp"
-                android:timePickerMode="spinner"
-                />
-
+                android:timePickerMode="spinner" />
         </LinearLayout>
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -66,36 +62,33 @@
             android:orientation="vertical">
 
             <Spinner
-                android:id="@+id/kehadiran_spinner"
+                android:id="@+id/kehadiranSpinner"
                 android:layout_width="match_parent"
-                android:layout_height="44dp"
+                android:layout_height="48dp"
                 android:background="@drawable/bg_spinner"
                 android:paddingLeft="30dp"
-                />
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp" />
 
             <EditText
-                android:id="@+id/keterangan_edittext"
+                android:id="@+id/keteranganEdittext"
                 android:layout_width="match_parent"
-                android:layout_height="44dp"
+                android:layout_height="48dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/bg_spinner"
                 android:paddingLeft="30dp"
-                android:hint="Keterangan"
-                />
-
+                android:hint="Keterangan" />
         </LinearLayout>
 
         <Button
-            android:id="@+id/submit_button"
+            android:id="@+id/submitButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:background="@drawable/login_button"
             android:text="@string/submit"
             android:fontFamily="sans-serif-black"
-            android:textColor="@color/white"
-            />
+            android:textColor="@color/white" />
     </LinearLayout>
-
 
 </ScrollView>
